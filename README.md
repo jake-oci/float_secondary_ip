@@ -29,11 +29,11 @@ This script is intended to provide a failover mechanism for secondary IP address
 
 **DYNAMIC GROUP AND POLICY CREATION EXAMPLE
 **
-**Dynamic Group Name - **
+**Dynamic Group Name -**
 
 highly-available-instances
 
-**Dynamic Group Rules - **
+**Dynamic Group Rules -**
 
 Any {instance.id = 'ocid1.instance.oc1.iad.anuwcljtc3adhhqcuw2vbj2dkpnikln3e6r6jjngpa7f5p6mxuhp5kz3ej3a', instance.id = 'ocid1.instance.oc1.iad.anuwcljtc3adhhqcygfloziau6nzmwfjwoyevvgifenjjlujmgiqm73fajpq'}
 
