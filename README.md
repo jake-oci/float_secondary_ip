@@ -29,6 +29,7 @@ This script is intended to provide a failover mechanism for secondary IP address
 
 **DYNAMIC GROUP AND POLICY CREATION EXAMPLE
 **
+
 **Dynamic Group Name -**
 
 highly-available-instances
