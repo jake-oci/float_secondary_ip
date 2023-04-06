@@ -2,6 +2,7 @@
 
 # float_secondary_ip
 To install the script, run the following.
+
 1.) curl https://raw.githubusercontent.com/jake-oci/float_secondary_ip/main/floating_secondary_ip.sh --output floating_secondary_ip.sh && chmod +x floating_secondary_ip.sh
 
 2.) Update the "secondary_private_ip_ocid" variable with the OCID of your secondary private IP "ocid1.privateip.xxx"
