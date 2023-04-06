@@ -1,8 +1,6 @@
 ***This script was Authored by Jake Bloom OCI Principal Network Solution Architect. This is not an Oracle supported script. No liability from this script will be assumed and support is best effort.***
 
 # float_secondary_ip
-Float the secondary IP address of an Oracle Linux 8 Instance
-
 To install the script, run the following.
 1.) curl https://raw.githubusercontent.com/jake-oci/float_secondary_ip/main/floating_secondary_ip.sh --output floating_secondary_ip.sh && chmod +x floating_secondary_ip.sh
 
@@ -11,6 +9,7 @@ To install the script, run the following.
 3.) Run "./floating_secondary_ip.sh"
 
 ## Description
+Float the secondary IP address of an Oracle Linux 8 Instance
 
 This script is intended to provide a failover mechanism for secondary IP addresses to "float" the IP address to the active node. This script might pair well with cluster IP services such as keepalived, but has not been tested at this time. 
 
