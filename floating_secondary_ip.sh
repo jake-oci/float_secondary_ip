@@ -2,28 +2,9 @@
 
 #####Hardset Variables
 #OCID of the secondary IP. This needs to be created in the OCI console if it's not already built.
-secondary_private_ip_ocid=ocid1.privateip.oc1.iad.aaaaaaaaoxd26mmgbduy5dxthw5dt64nofwepkcbrun4qfesc3w4e3eadrua
-
-#####Description of the script
-#1.) Compares the secondary IP Address vNIC to the instance assigned vNIC and move the secondary IP address over to the primary vNIC of the compute instance.
-#2.) If the ens3 interface doesn't have the secondary IP address assigned, update the local interface with the IP address of the secondary IP.
-
-#####Pre-Reqs
-#1.) Install the OCI CLI for Oracle Linux 8 before being to use this script. https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#InstallingCLI__oraclelinux8
-#2.) If you want this script to update the secondary IP address on ens3, the user needs to have SUDO capabilities.
-#3.) Setup a dynamic group and policy for instance principal authentication (Instructions below)
-
-#DYNAMIC GROUP AND POLICY CREATION REQUIREMENTS
-#1.) create dynamic group "highly-available-instances
-#2.) add a policy that adds the instance OCID for all of the instances.
-
-#DYNAMIC GROUP AND POLICY CREATION EXAMPLE
-#Dynamic Group Name - highly-available-instances
-#Dynamic Group Rules - Any {instance.id = 'ocid1.instance.oc1.iad.anuwcljtc3adhhqcuw2vbj2dkpnikln3e6r6jjngpa7f5p6mxuhp5kz3ej3a', instance.id = 'ocid1.instance.oc1.iad.anuwcljtc3adhhqcygfloziau6nzmwfjwoyevvgifenjjlujmgiqm73fajpq'}
-#Policy Name - Floating-IP-Policy
-#Policy Rules - 
-#1.) allow group highly-available-instances to use private-ips in compartment Bloom
-#2.) allow group highly-available-instances to use vnics in compartment Bloom
+###Example
+#secondary_private_ip_ocid=ocid1.privateip.oc1.iad.aaaaaaaaoxd26mmgbduy5dxthw5dt64nofwepkcbrun4qfesc3w4e3eadrua
+secondary_private_ip_ocid=
 
 ######Script#####
 #Make sure the secondary_private_ip_ocid variable is set.
@@ -86,6 +67,3 @@ echo "Script complete!"
 echo "Floating IP has moved to the local OCI instance."
 echo "The ens3 interface has $secondary_ip_address assigned as a secondary IP address."
 exit 0
-
-#Authored by Jake Bloom
-#Version 1.0
