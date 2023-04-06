@@ -23,9 +23,9 @@ This script is intended to provide a failover mechanism for secondary IP address
 
 ## DYNAMIC GROUP AND POLICY CREATION REQUIREMENTS
 
-1.) create dynamic group "highly-available-instances
+1.) Create dynamic group "highly-available-instances" and add each of the instance OCID's to the dynamic group. 
 
-2.) add a policy that adds the instance OCID for all of the instances.
+2.) Add a policy that adds the instance OCID for all of the instances.
 
 **DYNAMIC GROUP AND POLICY CREATION EXAMPLE
 **
