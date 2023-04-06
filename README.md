@@ -1,4 +1,4 @@
-*This script was Authored by Jake Bloom OCI Principal Network Solution Architect. This is not an Oracle supported script. No liability from this script will be assumed and support is best effort.*
+***This script was Authored by Jake Bloom OCI Principal Network Solution Architect. This is not an Oracle supported script. No liability from this script will be assumed and support is best effort.***
 
 # float_secondary_ip
 Float the secondary IP address of an Oracle Linux 8 Instance
