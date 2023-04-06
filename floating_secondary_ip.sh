@@ -33,6 +33,7 @@ fi
 if [ $secondary_ip_vnic != $compute_instance_vnic ]; then
     echo "Secondary IP address $secondary_ip_address is floating to this instance"
     float_secondary_ip=$(oci network vnic assign-private-ip --unassign-if-already-assigned --auth instance_principal --vnic-id $compute_instance_vnic --ip-address $secondary_ip_address)
+    echo "Done!"
 fi
 
 #Find if secondary IP is assigned to the local machine
@@ -51,6 +52,7 @@ fi
 
 #If the secondary IP address is already set, make sure it's the correct IP address before exiting the script.
 if [ ! -z "$local_machine_secondary_ip" ]; then
+    echo ""
     echo "Checking secondary IP assignment on ens3"
     if [ "$secondary_ip_address$local_machine_secondary_netmask" != "$local_machine_secondary_ip" ]; then
             echo "ERROR: This script can delete the mismatched IP configuration here, but there is most likely a bigger problem going on."
