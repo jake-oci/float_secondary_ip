@@ -34,8 +34,7 @@ This script is intended to provide a failover mechanism for secondary IP address
 
 2.) Add a policy that adds the instance OCID for all of the instances.
 
-**DYNAMIC GROUP AND POLICY CREATION EXAMPLE
-**
+**DYNAMIC GROUP AND POLICY CREATION EXAMPLE**
 
 **Dynamic Group Name -**
 
